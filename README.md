@@ -7,6 +7,3 @@
 - [sigmaflo@Codeforces](http://codeforces.com/profile/sigmaflo)
 
 [![https://cf.leed.at?id=sigmaflo](https://cf.leed.at?id=sigmaflo)](https://codeforces.com/profile/sigmaflo) (by. [mazacofo](https://github.com/mazassumnida/mazacofo))
-
-
--
