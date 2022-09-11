@@ -7,23 +7,21 @@ import java.util.StringTokenizer;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        HashSet<Character> set = new HashSet<>();
+        HashSet<Integer> set = new HashSet<>();
         StringTokenizer st = new StringTokenizer(br.readLine());
         int A = Integer.parseInt(st.nextToken());
         int B = Integer.parseInt(st.nextToken());
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < A; i++) {
-            set.add(st.nextToken().charAt(0));
+            set.add(Integer.parseInt(st.nextToken()));
         }
         st = new StringTokenizer(br.readLine());
+        int count = 0;
         for (int i = 0; i < B; i++) {
-            char num = st.nextToken().charAt(0);
-            if (set.contains(num)) {
-                set.remove(num);
-            } else {
-                set.add(num);
-            }
+            int size = set.size();
+            set.add(Integer.parseInt(st.nextToken()));
+            if (set.size() == size) count++;
         }
-        System.out.println(set.size());
+        System.out.println(set.size() - count);
     }
 }
